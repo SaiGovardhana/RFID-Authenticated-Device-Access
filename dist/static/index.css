@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+}
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+body{
+    margin:0px;
+    overflow: hidden;
+
+}
+#Display
+{   display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    background-color: #ff634b;
+    overflow: hidden;
+   
+
+}
+.Frame
+{   flex-shrink: 0;
+    text-align: center;
+    font-size: 1.8rem;
+    width: 100vw;
+    height:100vh;
+    margin: 0px;
+    background-color:#ff634b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transform: translateX(0vw);
+    translate: 1s;
+}
+.ControlFrame
+{   color: #ff634b;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 10px;
+    background-color: white;
+    width: 80vw;
+    margin: auto;
+    height: 100vh;
+}
+button
+{   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    border:none;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.ButtonOff{
+    background-color: red;
+}
+.ButtonOn{
+    background-color: green;
+}
+
+@keyframes animateLeft {
+    from
+    {
+        transform: translateX(0vw);
+    }
+    to{
+        transform: translateX(-100vw);
+    }
+}
+.MoveLeft
+{
+
+        
+        animation-name: animateLeft;
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        animation-fill-mode: forwards;
+        
+}
